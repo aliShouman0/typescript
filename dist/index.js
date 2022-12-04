@@ -89,3 +89,13 @@ let textBox = {
     resize: () => { },
 };
 let quantity;
+// optional property access operator
+let customer = {
+    name: "get from DB may be null or undefined",
+};
+console.log(customer?.name);
+// optional element  access operator
+//arr?.[0] arr!=null &&arr!=undefined
+// optional call
+let log1 = null;
+log?.("a");
