@@ -34,14 +34,28 @@ enum Direction1 {
 }
 
 //object
-type User={
+type User = {
   id: number;
   name: string;
 };
 
-const user:User={
-  id:1,
-  name:"John"
+const user: User = {
+  id: 1,
+  name: "John",
+};
+
+//Type Assertion
+let cid: any = 1;
+let customerId = <number>cid;
+//or
+let customerId2 = cid as number;
+
+//function
+function addNum(x: number, y: number): number {
+  return x + y;
 }
 
-//
+function log(message: string | number): void {
+  console.log(message);
+}
+

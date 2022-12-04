@@ -29,6 +29,17 @@ var Direction1;
 })(Direction1 || (Direction1 = {}));
 const user = {
     id: 1,
-    name: "John"
+    name: "John",
 };
-//
+//Type Assertion
+let cid = 1;
+let customerId = cid;
+//or
+let customerId2 = cid;
+//function
+function addNum(x, y) {
+    return x + y;
+}
+function log(message) {
+    console.log(message);
+}
