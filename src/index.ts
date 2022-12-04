@@ -1,3 +1,5 @@
+//watch?v=BCg4U1FzODs reference help
+
 //basic type
 let ida: number = 45;
 let company: string = "ALi";
@@ -26,7 +28,7 @@ pid = 22;
 pid = "22";
 
 //eum
-enum Direction1 {
+const enum Direction1 {
   up = 3,
   Down,
   left,
@@ -127,9 +129,8 @@ function getArray(items: any[]): any[] {
 
 let num = getArray([1, 2, 3, 4, 5]);
 let str = getArray(["brad", "asd", "ali"]);
-//hum mmmm 
+//hum mmmm
 num.push("Hello");
-
 
 //
 function getArray2<T>(items: T[]): T[] {
@@ -141,3 +142,34 @@ let str2 = getArray2<string>(["brad", "asd", "ali"]);
 //will not work
 //num2.push("Hello");
 
+//=================================================
+//=================================================
+
+//watch?v=d56mG7Dez reference help
+
+let sales: number = 123_456_798;
+
+// Intersection
+
+type Draggable = {
+  drag: () => void;
+};
+
+type Resizable = {
+  resize: () => void;
+};
+
+type UIWidget = Draggable & Resizable;
+
+let textBox: UIWidget = {
+  drag: () => {},
+  resize: () => {},
+};
+
+// literal  Types(exact,specific)
+
+type Quantity = 50 | 100 | 150;
+
+let quantity: Quantity;
+
+type Metric = "cm" | "mm";

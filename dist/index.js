@@ -1,4 +1,5 @@
 "use strict";
+//watch?v=BCg4U1FzODs reference help
 //basic type
 let ida = 45;
 let company = "ALi";
@@ -19,14 +20,6 @@ employee = [
 let pid;
 pid = 22;
 pid = "22";
-//eum
-var Direction1;
-(function (Direction1) {
-    Direction1[Direction1["up"] = 3] = "up";
-    Direction1[Direction1["Down"] = 4] = "Down";
-    Direction1[Direction1["left"] = 5] = "left";
-    Direction1[Direction1["Right"] = 6] = "Right";
-})(Direction1 || (Direction1 = {}));
 const user = {
     id: 1,
     name: "John",
@@ -77,7 +70,7 @@ function getArray(items) {
 }
 let num = getArray([1, 2, 3, 4, 5]);
 let str = getArray(["brad", "asd", "ali"]);
-//hum mmmm 
+//hum mmmm
 num.push("Hello");
 //
 function getArray2(items) {
@@ -87,3 +80,12 @@ let num2 = getArray2([1, 2, 3, 4, 5]);
 let str2 = getArray2(["brad", "asd", "ali"]);
 //will not work
 //num2.push("Hello");
+//=================================================
+//=================================================
+//watch?v=d56mG7Dez reference help
+let sales = 123_456_798;
+let textBox = {
+    drag: () => { },
+    resize: () => { },
+};
+let quantity;
