@@ -50,3 +50,25 @@ const user1 = {
 const p1 = 1;
 const add = (x, y) => x + y;
 const sub = (x, y) => x - y;
+class Person {
+    id;
+    name;
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    register() {
+        return `${this.name} is now register`;
+    }
+}
+const ali = new Person(1, "ali");
+//subclass
+class Employee extends Person {
+    position;
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp = new Employee(3, "alex", "Dev");
+console.log(emp.register());
