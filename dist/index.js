@@ -43,3 +43,10 @@ function addNum(x, y) {
 function log(message) {
     console.log(message);
 }
+const user1 = {
+    id: 1,
+    name: "John",
+};
+const p1 = 1;
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;

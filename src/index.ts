@@ -59,3 +59,29 @@ function log(message: string | number): void {
   console.log(message);
 }
 
+//interfaces
+interface UserInterface {
+  readonly id: number;
+  name: string;
+  age?: number;
+}
+
+const user1: UserInterface = {
+  id: 1,
+  name: "John",
+};
+
+// readonly id will not work as its readonly
+//user1.id = 22;
+
+type Point = number | string;
+const p1: Point = 1;
+//not work | with interface
+//interface Point = number | string;
+
+interface MathFunc {
+  (x: number, y: number): number;
+}
+
+const add: MathFunc = (x: number, y: number): number => x + y;
+const sub: MathFunc = (x: number, y: number): number => x - y;
