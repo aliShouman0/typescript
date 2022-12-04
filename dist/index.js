@@ -71,4 +71,19 @@ class Employee extends Person {
     }
 }
 const emp = new Employee(3, "alex", "Dev");
-console.log(emp.register());
+//generics
+function getArray(items) {
+    return new Array().concat(items);
+}
+let num = getArray([1, 2, 3, 4, 5]);
+let str = getArray(["brad", "asd", "ali"]);
+//hum mmmm 
+num.push("Hello");
+//
+function getArray2(items) {
+    return new Array().concat(items);
+}
+let num2 = getArray2([1, 2, 3, 4, 5]);
+let str2 = getArray2(["brad", "asd", "ali"]);
+//will not work
+//num2.push("Hello");
