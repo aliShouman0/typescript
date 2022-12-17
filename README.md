@@ -28,3 +28,5 @@
 
 - ### Safety at Scale <br>
   TypeScript understands JavaScript and uses type inference to give you great tooling without additional code.
+
+## With Help from [codewithmosh](https://codewithmosh.com/)
